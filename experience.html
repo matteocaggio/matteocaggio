@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Experience</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4a6278;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    /* Experience specific styles */
+    h2 {
+      color: #2c3e50;
+      margin: 2rem 0 1rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #eaeaea;
+    }
+
+    .experience-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+
+    .experience-item {
+      padding: 0.8rem 0;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+    }
+
+    .experience-details {
+      flex: 1;
+    }
+
+    .position {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .institution {
+      color: #16a085;
+      font-size: 0.95rem;
+    }
+
+    .date {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      min-width: 160px;
+      text-align: right;
+    }
+
+    .education-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+
+    .education-item {
+      padding: 0.8rem 0;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .education-details {
+      flex: 1;
+    }
+
+    .degree {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .school {
+      color: #16a085;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      main {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+      
+      .experience-item,
+      .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .date {
+        margin-top: 0.3rem;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Professional Experience</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="experience.html">Professional Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Work Experience</h2>
+    <ul class="experience-list">
+      
+
+      <li class="experience-item">
+        <div class="experience-details">
+          <div class="position">Scholar</div>
+          <div class="institution">Institute of Mathematics CAS</div>
+        </div>
+        <div class="date">2020</div>
+      </li>
+
+      <li class="experience-item">
+        <div class="experience-details">
+          <div class="position">Postdoc</div>
+          <div class="institution">University</div>
+        </div>
+        <div class="date">2018-</div>
+      </li>
+    </ul>
+    
+    <h2>Education</h2>
+    <ul class="education-list">
+      <li class="education-item">
+        <div class="education-details">
+          <div class="degree">PhD in Mathematics</div>
+          <div class="school">Prague</div>
+        </div>
+        <div class="date">2018</div>
+      </li>
+      <li class="education-item">
+        <div class="education-details">
+          <div class="degree">Bachelor of Mathematics</div>
+          <div class="school">University</div>
+        </div>
+        <div class="date">2009 - 2013</div>
+      </li>
+    </ul>
+  </main>
+
+
+</body>
+</html>
