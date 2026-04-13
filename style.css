@@ -1,0 +1,158 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #4a6278;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Publications specific styles */
+h2 {
+  color: #2c3e50;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.pub-list {
+  list-style: none;
+  counter-reset: pub-counter;
+}
+
+.pub-item {
+  padding: 0.8rem 0.8rem 0.8rem 3rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.pub-item:hover {
+  background-color: #f0f4f8;
+  border-left-color: #3498db;
+}
+
+.pub-item::before {
+  counter-increment: pub-counter;
+  content: counter(pub-counter) ".";
+  position: absolute;
+  left: 0.8rem;
+  font-weight: bold;
+  color: #3498db;
+  width: 2.2rem;
+  text-align: right;
+}
+
+.authors {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.title {
+  margin: 0.3rem 0;
+  color: #34495e;
+}
+
+.journal {
+  color: #16a085;
+  font-size: 0.95rem;
+}
+
+.details {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+/* Home page styles */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  nav a {
+    margin: 0.3rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pub-item {
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+  }
+  
+  .pub-item::before {
+    left: 0.5rem;
+  }
+}
