@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Matteo Caggio</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4a6278;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    /* Home page styles */
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .profile-pic img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #2c3e50;
+      background-color: #e0e0e0;
+      display: block;
+    }
+
+    .profile-pic {
+      flex-shrink: 0;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .intro-text a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .intro-text a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Matteo Caggio</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teaching.html">Professional Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div class="profile-pic">
+        <!-- 如果图片不存在，将显示灰色占位区域 -->
+        <img src="profile.jpg" alt="Bingkang Huang" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="width:200px; height:200px; border-radius:50%; border:4px solid #2c3e50; background:#e0e0e0; display:none; line-height:200px; text-align:center;">No Image</div>
+      </div>
+      <div class="intro-text">
+        <p>Hello, </p>
+        <p>Explore my research, <a href="https://mathscinet.ams.org/mathscinet/author?authorId=1176735">publications</a>, and ways to get in <a href="./contact.html" >touch</a>!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2026 Matteo Caggio</div>
+  </footer>
+</body>
+</html>
